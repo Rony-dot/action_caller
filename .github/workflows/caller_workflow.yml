@@ -8,7 +8,7 @@ jobs:
     uses: Rony-dot/actions_in_action/.github/workflows/unit_test.yml@main
     strategy:
       matrix:
-        python_version: [3.12, 3.9, 2.7]
+        python_version: [3.12, 3.9, 3.6]
     with:
       environment: 'dev'
       python_version: ${{ matrix.python_version }}
