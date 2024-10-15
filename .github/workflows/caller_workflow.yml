@@ -10,6 +10,6 @@ jobs:
     uses: Rony-dot/actions_in_action/.github/workflows/unit_test.yml@main
     with:
       environment: 'dev'
-      python_version: ${{ matrix.python_version }}
+      PYTHON_VERSION: ${{ matrix.python_version }}
     secrets:
       PERSONAL_ACCESS_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
