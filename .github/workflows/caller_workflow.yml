@@ -4,12 +4,9 @@ on:
 
 jobs:
   JOB-CALL-WOKFLOW:
-    strategy:
-      matrix:
-        python_version: [3.12, 3.9, 2,.7]
     uses: Rony-dot/actions_in_action/.github/workflows/unit_test.yml@main
     with:
       environment: 'dev'
-      PYTHON_VERSION: ${{ matrix.python_version }}
+      PYTHON_VERSION: 3.12
     secrets:
       PERSONAL_ACCESS_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
